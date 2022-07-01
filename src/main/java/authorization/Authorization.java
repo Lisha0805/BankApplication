@@ -17,7 +17,7 @@ public class Authorization {
         String login, password;
         int attempt = 0;
         do {
-            System.out.println("Введите, пожалуйста, логин и пароль:");
+            System.out.println("Please enter login and password:");
             login = scanner.nextLine();
             password = scanner.nextLine();
             //инициализировать кредо с логином и паролем
@@ -27,9 +27,9 @@ public class Authorization {
             //сделать сравнение объектов
             //if (login.equals(order.getLogin()) && password.equals(order.getPassword())) mainPage.display();
             if (credentials.equals(order)) mainPage.display();
-            else {System.out.println("Неверный логин или пароль!"); attempt++; }
+            else {System.out.println("Wrong login or password!"); attempt++; }
 
-            if (attempt == 3) {System.out.println("Закончились попытки."); System.exit(2);}
+            if (attempt == 3) {System.out.println("Ran out of attempts"); System.exit(2);}
         } while (true);
     }
 }
