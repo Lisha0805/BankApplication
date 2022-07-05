@@ -11,7 +11,7 @@ public class Authorization {
 
     Scanner scanner = new Scanner(System.in);
     MainPage mainPage = new MainPage();
-    private static final Logger logger = Logger.getLogger(Authorization.class);
+    Logger logger = Logger.getLogger(Authorization.class);
 
     public void applicationLogin() throws IOException {
         UserCredentials order = (UserCredentials) ResourceConverter.yamlToObject("authorization.yaml", UserCredentials.class);
@@ -27,8 +27,8 @@ public class Authorization {
 
             //if (login.equals(order.getLogin()) && password.equals(order.getPassword())) mainPage.display();
             if (credentials.equals(order)) mainPage.display();
-            else {logger.info("Wrong login or password!"); attempt++; }
-            if (attempt == 3) {logger.info("Ran out of attempts"); System.exit(2);}
+            else {logger.warn("Wrong login or password!"); attempt++; }
+            if (attempt == 3) {logger.fatal("Ran out of attempts"); System.exit(2);}
         } while (true);
     }
 }

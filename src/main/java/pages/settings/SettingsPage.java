@@ -35,7 +35,7 @@ public class SettingsPage implements MenuPages {
                 case 1 -> printPersonalData(pd);
                 case 2 -> changePersonalDate();
                 case 3 -> mainPage.display();
-                default -> logger.info("No such item!");
+                default -> logger.warn("No such item!");
 
             }
         }while (point > 3);
@@ -58,7 +58,7 @@ public class SettingsPage implements MenuPages {
                 case 2 -> pd.setPatronymic(scannerData.nextLine());
                 case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
                 case 4 -> display();
-                default -> logger.info("No such item!");
+                default -> logger.warn("No such item!");
             }
             ResourceConverter.objectToJson("personalData.json", pd);
             display();

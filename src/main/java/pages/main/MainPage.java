@@ -21,7 +21,12 @@ public class MainPage implements MenuPages {
         CreditsPage credit = new CreditsPage();
 
         int point;
-        String menu = "Maim menu: \n1. Accounts \n2. Settings \n3. Credits";
+        String menu = """
+                Maim menu:
+                1. Accounts
+                2. Settings
+                3. Credits""";
+
         do {
             logger.info(menu);
             point = scanner.nextInt();
@@ -30,7 +35,7 @@ public class MainPage implements MenuPages {
                 case 1 -> accounts.display();
                 case 2 -> setting.display();
                 case 3 -> credit.display();
-                default -> logger.info("No such item!");
+                default -> logger.warn("No such item!");
             }
         } while (point > 3);
     }
