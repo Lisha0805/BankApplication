@@ -1,5 +1,7 @@
 package pages.main;
 
+import authorization.Authorization;
+import org.apache.log4j.Logger;
 import pages.MenuPages;
 import pages.accounts.AccountsPage;
 import pages.credits.CreditsPage;
@@ -9,6 +11,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class MainPage implements MenuPages {
+    Logger logger = Logger.getLogger(MainPage.class);
 
     @Override
     public void display() throws IOException {
@@ -20,14 +23,14 @@ public class MainPage implements MenuPages {
         int point;
         String menu = "Maim menu: \n1. Accounts \n2. Settings \n3. Credits";
         do {
-            System.out.println(menu);
+            logger.info(menu);
             point = scanner.nextInt();
 
             switch (point) {
                 case 1 -> accounts.display();
                 case 2 -> setting.display();
                 case 3 -> credit.display();
-                default -> System.out.println("No such item!");
+                default -> logger.info("No such item!");
             }
         } while (point > 3);
     }

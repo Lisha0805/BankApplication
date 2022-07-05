@@ -1,5 +1,6 @@
 package pages.settings;
 
+import org.apache.log4j.Logger;
 import pages.MenuPages;
 import pages.main.MainPage;
 import util.ResourceConverter;
@@ -12,6 +13,7 @@ public class SettingsPage implements MenuPages {
     private Scanner scannerPoint = new Scanner(System.in);
     private Scanner scannerData = new Scanner(System.in);
     private PersonalData pd;
+    private Logger logger = Logger.getLogger(SettingsPage.class);
 
     public SettingsPage() throws IOException {
         pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
@@ -27,13 +29,13 @@ public class SettingsPage implements MenuPages {
 
         int point = 0;
         do {
-            System.out.println(menu);
+            logger.info(menu);
             point = scannerPoint.nextInt();
             switch (point) {
                 case 1 -> printPersonalData(pd);
                 case 2 -> changePersonalDate();
                 case 3 -> mainPage.display();
-                default -> System.out.println("No such item!");
+                default -> logger.info("No such item!");
 
             }
         }while (point > 3);
@@ -47,23 +49,23 @@ public class SettingsPage implements MenuPages {
                     "\n3. Source of income: " + pd.getSourceOfIncome() +
                     "\n4. Back";
 
-            System.out.println(menuToChange);
+            logger.info(menuToChange);
             int point = scannerPoint.nextInt();
 
-            System.out.println("Enter new value");
+            logger.info("Enter new value");
             switch (point) {
                 case 1 -> pd.setLastName(scannerData.nextLine());
                 case 2 -> pd.setPatronymic(scannerData.nextLine());
                 case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
                 case 4 -> display();
-                default -> System.out.println("No such item!");
+                default -> logger.info("No such item!");
             }
             ResourceConverter.objectToJson("personalData.json", pd);
             display();
         }
 
         public void printPersonalData (PersonalData personalData) throws IOException {
-            System.out.println("Personal Data: " +
+            logger.info("Personal Data: " +
                     "\n" + " Firstname: " + personalData.getFirstName() +
                     "\n" + " Lastname: " + personalData.getLastName() +
                     "\n" + " Patronymic: " + personalData.getPatronymic() +
