@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 public class SettingsPage implements MenuPages {
     private MainPage mainPage = new MainPage();
-    private Scanner scanner = new Scanner(System.in);
+    private Scanner scannerPoint = new Scanner(System.in);
+    private Scanner scannerData = new Scanner(System.in);
     private PersonalData pd;
 
     public SettingsPage() throws IOException {
@@ -18,15 +19,16 @@ public class SettingsPage implements MenuPages {
 
     @Override
     public void display() throws IOException {
-        String menu = "Settings" +
-                "\n1. View Data" +
-                "\n2. Change Data" +
-                "\n3. Back";
+        String menu = """
+                Settings
+                1. View Data
+                2. Change Data
+                3. Back""";
 
         int point = 0;
         do {
             System.out.println(menu);
-            point = scanner.nextInt();
+            point = scannerPoint.nextInt();
             switch (point) {
                 case 1 -> printPersonalData(pd);
                 case 2 -> changePersonalDate();
@@ -39,24 +41,23 @@ public class SettingsPage implements MenuPages {
 
         public void changePersonalDate () throws IOException {
             PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
-            int point;
-
             String menuToChange = "Select item to change: " +
                     "\n1. Lastname: " + pd.getLastName() +
                     "\n2. Patronymic: " + pd.getPatronymic() +
                     "\n3. Source of income: " + pd.getSourceOfIncome() +
-                    "\n4. Income per year: " + pd.getIncomePerYear() +
-                    "\n5. Back";
-            System.out.println(menuToChange);
-            point = scanner.nextInt();
-            String value; int value1;
-            if (point == 1) {System.out.println("Enter new value"); value = scanner.nextLine(); pd.setLastName(value);}
-            else if (point == 2){System.out.println("Enter new value"); value = scanner.nextLine(); pd.setPatronymic(value);}
-            else if (point == 3) {System.out.println("Enter new value"); value = scanner.nextLine();pd.setSourceOfIncome(value);}
-            else if (point == 4){System.out.println("Enter new value"); value1 = scanner.nextInt(); pd.setIncomePerYear(value1);}
-            else if (point == 5) display();
-            else System.out.println("No such item!");
+                    "\n4. Back";
 
+            System.out.println(menuToChange);
+            int point = scannerPoint.nextInt();
+
+            System.out.println("Enter new value");
+            switch (point) {
+                case 1 -> pd.setLastName(scannerData.nextLine());
+                case 2 -> pd.setPatronymic(scannerData.nextLine());
+                case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
+                case 4 -> display();
+                default -> System.out.println("No such item!");
+            }
             ResourceConverter.objectToJson("personalData.json", pd);
             display();
         }
