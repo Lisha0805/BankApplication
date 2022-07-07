@@ -11,7 +11,8 @@ public class Authorization {
 
     Scanner scanner = new Scanner(System.in);
     MainPage mainPage = new MainPage();
-    Logger logger = Logger.getLogger(Authorization.class);
+    Logger loggerToConsole = Logger.getLogger("APP1");
+    Logger loggerToFile = Logger.getLogger("APP2");
 
     public void applicationLogin() throws IOException {
         UserCredentials order = (UserCredentials) ResourceConverter.yamlToObject("authorization.yaml", UserCredentials.class);
@@ -19,16 +20,27 @@ public class Authorization {
         String login, password;
         int attempt = 0;
         do {
-            logger.info("Please enter login and password:");
+            loggerToConsole.info("Please enter login and password:");
+            loggerToFile.info("Please enter login and password");
             login = scanner.nextLine();
             password = scanner.nextLine();
             UserCredentials credentials = new UserCredentials();
             credentials.setCredentials(login, password);
 
             //if (login.equals(order.getLogin()) && password.equals(order.getPassword())) mainPage.display();
-            if (credentials.equals(order)) mainPage.display();
-            else {logger.warn("Wrong login or password!"); attempt++; }
-            if (attempt == 3) {logger.fatal("Ran out of attempts"); System.exit(2);}
+            if (credentials.equals(order)) {
+                mainPage.display();
+                loggerToFile.info("Successful login");
+            }
+            else {
+                loggerToConsole.warn("Wrong login or password!");
+                loggerToFile.warn("Wrong login or password!");
+                attempt++;
+            }
+            if (attempt == 3) {
+                loggerToConsole.fatal("Ran out of attempts");
+                loggerToFile.fatal("Ran out of attempts");
+                System.exit(2);}
         } while (true);
     }
 }

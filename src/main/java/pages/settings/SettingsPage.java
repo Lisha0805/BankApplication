@@ -9,34 +9,36 @@ import java.io.*;
 import java.util.Scanner;
 
 public class SettingsPage implements MenuPages {
+    Logger loggerToFile = Logger.getLogger("LOG2");
+    Logger loggerToConsole = Logger.getLogger("LOG1");
     private MainPage mainPage = new MainPage();
     private Scanner scannerPoint = new Scanner(System.in);
     private Scanner scannerData = new Scanner(System.in);
     private PersonalData pd;
-    private Logger logger = Logger.getLogger(SettingsPage.class);
-
-    public SettingsPage() throws IOException {
-        pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
-    }
 
     @Override
     public void display() throws IOException {
+        PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
+
+        int point = 0;
         String menu = """
                 Settings
                 1. View Data
                 2. Change Data
                 3. Back""";
-
-        int point = 0;
         do {
-            logger.info(menu);
+            loggerToConsole.info(menu);
+            loggerToFile.info(menu);
             point = scannerPoint.nextInt();
+            loggerToFile.info(point);
             switch (point) {
                 case 1 -> printPersonalData(pd);
                 case 2 -> changePersonalDate();
                 case 3 -> mainPage.display();
-                default -> logger.warn("No such item!");
-
+                default -> {
+                    loggerToConsole.warn("No such item!");
+                    loggerToFile.warn("No such item!");
+                }
             }
         }while (point > 3);
     }
@@ -49,23 +51,29 @@ public class SettingsPage implements MenuPages {
                     "\n3. Source of income: " + pd.getSourceOfIncome() +
                     "\n4. Back";
 
-            logger.info(menuToChange);
+            loggerToConsole.info(menuToChange);
+            loggerToFile.info(menuToChange);
             int point = scannerPoint.nextInt();
+            loggerToFile.info(point);
 
-            logger.info("Enter new value");
+            loggerToConsole.info("Enter new value");
+            loggerToFile.info("Enter new value");
             switch (point) {
                 case 1 -> pd.setLastName(scannerData.nextLine());
                 case 2 -> pd.setPatronymic(scannerData.nextLine());
                 case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
                 case 4 -> display();
-                default -> logger.warn("No such item!");
+                default -> {
+                    loggerToConsole.warn("No such item!");
+                    loggerToFile.warn("No such item!");
+                }
             }
             ResourceConverter.objectToJson("personalData.json", pd);
             display();
         }
 
         public void printPersonalData (PersonalData personalData) throws IOException {
-            logger.info("Personal Data: " +
+            String printPersonalData = "Personal Data: " +
                     "\n" + " Firstname: " + personalData.getFirstName() +
                     "\n" + " Lastname: " + personalData.getLastName() +
                     "\n" + " Patronymic: " + personalData.getPatronymic() +
@@ -73,7 +81,9 @@ public class SettingsPage implements MenuPages {
                     "\n" + " Sex: " + personalData.getSex() +
                     "\n" + " Source of income: " + personalData.getSourceOfIncome() +
                     "\n" + " Income per year: " + personalData.getIncomePerYear() +
-                    "\n" + " Credit rating: " + personalData.getCreditRating());
+                    "\n" + " Credit rating: " + personalData.getCreditRating();
+            loggerToConsole.info(printPersonalData);
+            loggerToFile.info(printPersonalData);
             display();
         }
     }
