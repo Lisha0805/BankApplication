@@ -475,3 +475,135 @@
 1.USD
 2.BYN
 3.EUR
+2022-07-14 21:35:23 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:36:14 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:36:19 INFO  APP1:31 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-14 21:36:21 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:36:22 INFO  APP1:33 - 1
+2022-07-14 21:36:22 INFO  APP1:64 - Enter account number:
+2022-07-14 21:36:24 INFO  APP1:66 - Choose account currency:
+1.USD
+2.BYN
+3.EUR
+2022-07-14 21:39:46 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:41:18 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:41:23 WARN  APP1:34 - Wrong login or password!
+2022-07-14 21:41:23 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:41:27 INFO  APP1:31 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-14 21:41:29 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:41:32 INFO  APP1:33 - 3
+2022-07-14 21:41:32 INFO  APP1:96 - Accounts: 
+ Number account: 265564
+ Currency account: BYN
+ Status account: ACTIVE
+ Balance account 0.0
+2022-07-14 21:41:32 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:41:35 INFO  APP1:33 - 1
+2022-07-14 21:41:35 INFO  APP1:64 - Enter account number:
+2022-07-14 21:41:37 INFO  APP1:66 - Choose account currency:
+1.USD
+2.BYN
+3.EUR
+2022-07-14 21:41:40 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:41:50 INFO  APP1:33 - 3
+2022-07-14 21:41:50 INFO  APP1:96 - Accounts: 
+ Number account: 265564
+ Currency account: BYN
+ Status account: ACTIVE
+ Balance account 0.0
+2022-07-14 21:41:50 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:41:53 INFO  APP1:33 - 3
+2022-07-14 21:41:53 INFO  APP1:96 - Accounts: 
+ Number account: 265564
+ Currency account: BYN
+ Status account: ACTIVE
+ Balance account 0.0
+2022-07-14 21:41:53 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:43:01 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:48:45 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:49:10 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:51:16 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:51:23 INFO  APP1:31 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-14 21:51:25 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:51:28 INFO  APP1:33 - 3
+2022-07-14 21:51:28 INFO  APP1:96 - Accounts: 
+ Number account: 265564
+ Currency account: BYN
+ Status account: ACTIVE
+ Balance account 0.0
+2022-07-14 21:51:28 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:51:37 INFO  APP1:33 - 1
+2022-07-14 21:51:37 INFO  APP1:64 - Enter account number:
+2022-07-14 21:51:42 INFO  APP1:66 - Choose account currency:
+1.USD
+2.BYN
+3.EUR
+2022-07-14 21:51:44 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:51:52 INFO  APP1:33 - 3
+2022-07-14 21:51:52 INFO  APP1:96 - Accounts: 
+ Number account: 265564
+ Currency account: BYN
+ Status account: ACTIVE
+ Balance account 0.0
+2022-07-14 21:51:52 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4. View account balance
+5. Back
+2022-07-14 21:53:10 INFO  APP1:22 - Please enter login and password:
+2022-07-14 21:53:35 INFO  APP1:22 - Please enter login and password:

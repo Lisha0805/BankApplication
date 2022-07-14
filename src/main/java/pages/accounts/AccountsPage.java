@@ -79,7 +79,7 @@ public class AccountsPage implements MenuPages {
         }
         accList.list.add(new Account(numberAccount, cur, EnumStatus.ACTIVE, 0));
 
-        ResourceConverter.objectToYaml("accounts.yaml", accList);
+        ResourceConverter.objectToYaml("accounts.yaml", AccountList.class);
         display();
     }
 

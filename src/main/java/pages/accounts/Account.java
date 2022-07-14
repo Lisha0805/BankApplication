@@ -6,6 +6,18 @@ public class Account {
     private EnumStatus status;
     private double balance;
 
+    /*
+number: 265564
+currency: "BYN"
+status: "ACTIVE"
+balance: 0
+---
+number: 0645
+currency: "BYN"
+status: "ACTIVE"
+balance: 120
+     */
+
     public Account(long number, EnumCurrency currency, EnumStatus status, double balance) {
         this.number = number;
         this.currency = currency;
