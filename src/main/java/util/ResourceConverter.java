@@ -27,4 +27,9 @@ public class ResourceConverter {
         objectMapper.writeValue(new File(defaultResourcePath + filename), object);
         System.out.println("Data updated!");
     }
+
+    public static void objectToYaml(String filename, Object object) throws IOException {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        mapper.writeValue(new File(defaultResourcePath + filename), object);
+    }
 }
