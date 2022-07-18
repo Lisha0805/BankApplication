@@ -11,7 +11,9 @@ import java.util.Scanner;
 public class AccountsPage implements MenuPages {
     private MainPage mainPage = new MainPage();
     Logger log = Logger.getLogger("APP1");
-    Account acc = (Account) ResourceConverter.yamlToObject("accounts.yaml", Account.class);
+    AccountList accountList = (AccountList) ResourceConverter.yamlToObject("accounts.yaml", AccountList.class);
+    Scanner scanner = new Scanner(System.in);
+
 
     public AccountsPage() throws IOException {
     }
@@ -24,13 +26,13 @@ public class AccountsPage implements MenuPages {
                 1. Add new account
                 2. Delete account
                 3. View accounts
-                4. View account balance
+                4.
                 5. Back""";
         do {
             log.info(menu);
-            Scanner scanner = new Scanner(System.in);
+            //Scanner scanner = new Scanner(System.in);
             point = scanner.nextInt();
-            log.info(point);
+            //log.info(point);
 
             switch (point) {
                 case 1:
@@ -40,7 +42,7 @@ public class AccountsPage implements MenuPages {
                     ////////////////////////
                     break;
                 case 3:
-                    printAccounts(acc);
+                    printAccounts();
                     break;
                 case 4:
                     //BankApp.mainMenu();
@@ -56,44 +58,36 @@ public class AccountsPage implements MenuPages {
     }
 
     public void addAccount() throws IOException {
-
-        AccountList accList = new AccountList();
-
-        Scanner sc = new Scanner(System.in);
-
-        log.info("Enter account number:");
-        long numberAccount = sc.nextInt();
-        log.info("""
-                Choose account currency:
-                1.USD
-                2.BYN
-                3.EUR""");
-        int pointCurrency = sc.nextInt();
-        EnumCurrency cur = EnumCurrency.BYN;
-
-        switch (pointCurrency) {
-            case 1 -> cur = EnumCurrency.USD;
-            case 2 -> cur = EnumCurrency.BYN;
-            case 3 -> cur = EnumCurrency.EUR;
-            default -> log.warn("No such item!");
-        }
-        accList.list.add(new Account(numberAccount, cur, EnumStatus.ACTIVE, 0));
-
-        ResourceConverter.objectToYaml("accounts.yaml", AccountList.class);
+        Account accToAdd = new Account();
+        enterAccountNumber(accToAdd);
+        enterAccountCurrency(accToAdd);
+        accountList.list.add(accToAdd);
+        log.info("Account added");
         display();
     }
 
-    public void deleteAccount(){
-
+    public void enterAccountNumber(Account acc){
+        //Scanner sc = new Scanner(System.in);
+        log.info("Enter account number");
+        long numberAccount = scanner.nextLong();
+        acc.setNumber(numberAccount);
     }
 
-    public void printAccounts(Account account) throws IOException {
-        String printAccounts = "Accounts: " +
-                "\n" + " Number account: " + account.getNumber()+
-                "\n" + " Currency account: " + account.getCurrency() +
-                "\n" + " Status account: " + account.getStatus() +
-                "\n" + " Balance account " + account.getBalance();
-        log.info(printAccounts);
+    public void enterAccountCurrency(Account acc){
+        Scanner sc = new Scanner(System.in);
+        log.info("Choose account currency: USD, BYN, EUR");
+        String cur = sc.nextLine();
+
+        switch (cur) {
+            case "USD" -> acc.setCurrency(AccountCurrency.USD);
+            case "BYN" -> acc.setCurrency(AccountCurrency.BYN);
+            case "EUR" -> acc.setCurrency(AccountCurrency.EUR);
+            default -> log.warn("No such item!");
+        }
+    }
+
+    public void printAccounts() throws IOException {
+        accountList.printAccountList();
         display();
     }
 }

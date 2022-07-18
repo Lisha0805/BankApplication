@@ -1,6 +1,6 @@
 package pages.accounts;
 
-public enum EnumStatus {
+public enum AccountStatus {
     ACTIVE,
     PASSIVE
 }

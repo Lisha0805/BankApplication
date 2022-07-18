@@ -1,6 +1,6 @@
 package pages.accounts;
 
-public enum EnumCurrency {
+public enum AccountCurrency {
     USD,
     BYN,
     EUR
