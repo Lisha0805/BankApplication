@@ -25,9 +25,7 @@ list:
         this.balance = balance;
     }
 
-    public Account() {
-
-    }
+    public Account() { }
 
     public long getNumber() {
         return number;

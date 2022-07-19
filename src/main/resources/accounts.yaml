@@ -9,5 +9,5 @@ list:
     balance: 120.50
   - number: 83939303
     currency: "BYN"
-    status: "PASSIVE"
+    status: "INACTIVE"
     balance: 160.99

@@ -14,9 +14,7 @@ public class AccountsPage implements MenuPages {
     AccountList accountList = (AccountList) ResourceConverter.yamlToObject("accounts.yaml", AccountList.class);
     Scanner scanner = new Scanner(System.in);
 
-
-    public AccountsPage() throws IOException {
-    }
+    public AccountsPage() throws IOException { }
 
     @Override
     public void display() throws IOException {
@@ -30,9 +28,8 @@ public class AccountsPage implements MenuPages {
                 5. Back""";
         do {
             log.info(menu);
-            //Scanner scanner = new Scanner(System.in);
             point = scanner.nextInt();
-            //log.info(point);
+            log.info(point);
 
             switch (point) {
                 case 1:
@@ -42,7 +39,7 @@ public class AccountsPage implements MenuPages {
                     ////////////////////////
                     break;
                 case 3:
-                    printAccounts();
+                    printAccountsInfo();
                     break;
                 case 4:
                     //BankApp.mainMenu();
@@ -67,7 +64,6 @@ public class AccountsPage implements MenuPages {
     }
 
     public void enterAccountNumber(Account acc){
-        //Scanner sc = new Scanner(System.in);
         log.info("Enter account number");
         long numberAccount = scanner.nextLong();
         acc.setNumber(numberAccount);
@@ -76,17 +72,25 @@ public class AccountsPage implements MenuPages {
     public void enterAccountCurrency(Account acc){
         Scanner sc = new Scanner(System.in);
         log.info("Choose account currency: USD, BYN, EUR");
-        String cur = sc.nextLine();
+        String cur;
+        cur = sc.nextLine();
 
-        switch (cur) {
+        try {
+            AccountCurrency enteredCurrency = AccountCurrency.valueOf(cur);
+            acc.setCurrency(enteredCurrency);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        /*switch (cur) {
             case "USD" -> acc.setCurrency(AccountCurrency.USD);
             case "BYN" -> acc.setCurrency(AccountCurrency.BYN);
             case "EUR" -> acc.setCurrency(AccountCurrency.EUR);
             default -> log.warn("No such item!");
-        }
+        }*/
     }
 
-    public void printAccounts() throws IOException {
+    public void printAccountsInfo() throws IOException {
         accountList.printAccountList();
         display();
     }

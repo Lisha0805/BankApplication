@@ -9,8 +9,8 @@ public class PersonalData{
     private String lastName;
     private String patronymic;
     private String dateOfBirth;
-    private String sex;
-    private String sourceOfIncome;
+    private PersonalDataSex sex;
+    private PersonalDataSourceOfIncome sourceOfIncome;
     private int incomePerYear;
     private int creditRating;
     private int age;
@@ -31,11 +31,11 @@ public class PersonalData{
         this.dateOfBirth = dateOfBirth;
     }
 
-    public void setSex(String sex) {
+    public void setSex(PersonalDataSex sex) {
         this.sex = sex;
     }
 
-    public void setSourceOfIncome(String sourceOfIncome) {
+    public void setSourceOfIncome(PersonalDataSourceOfIncome sourceOfIncome) {
         this.sourceOfIncome = sourceOfIncome;
     }
 
@@ -63,11 +63,11 @@ public class PersonalData{
         return dateOfBirth;
     }
 
-    public String getSex() {
+    public PersonalDataSex getSex() {
         return sex;
     }
 
-    public String getSourceOfIncome() {
+    public PersonalDataSourceOfIncome getSourceOfIncome() {
         return sourceOfIncome;
     }
 
@@ -85,11 +85,11 @@ public class PersonalData{
 
     public void calculateAge(){
         String[] parts = dateOfBirth.split("-");
-        int part1 = Integer.parseInt(parts[0]);
-        int part2 = Integer.parseInt(parts[1]);
-        int part3 = Integer.parseInt(parts[2]);
+        int year = Integer.parseInt(parts[0]);
+        int month = Integer.parseInt(parts[1]);
+        int day = Integer.parseInt(parts[2]);
 
-        LocalDate birthDate = LocalDate.of(part1, part2, part3);
+        LocalDate birthDate = LocalDate.of(year, month, day);
         LocalDate currentDate = LocalDate.now();
         age = Period.between(birthDate, currentDate).getYears();
     }

@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class CreditsPage implements MenuPages {
     private MainPage mainPage = new MainPage();
     Logger log = Logger.getLogger("APP1");
-
+    Scanner scanner = new Scanner(System.in);
     /*
 Суммы кредита:
 Если работают несколько условий по сумме кредита - выбирается наименьшая
@@ -40,7 +40,6 @@ public class CreditsPage implements MenuPages {
     @Override
     public void display() throws IOException {
         int point;
-
         String menu = """
                 Accounts
                 1.
@@ -50,7 +49,6 @@ public class CreditsPage implements MenuPages {
                 5. Back""";
         do {
             log.info(menu);
-            Scanner scanner = new Scanner(System.in);
             point = scanner.nextInt();
             log.info(point);
 
@@ -58,10 +56,10 @@ public class CreditsPage implements MenuPages {
                 case 1:
                     log.info("Start of scoring");
                     Scoring sc = new Scoring();
-                    sc.ageVerification();
+                    sc.runScoring();
                     break;
                 case 2:
-///////////////
+                    ///////////////
                     break;
                 case 3:
                     /////////

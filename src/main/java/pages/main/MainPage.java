@@ -1,6 +1,5 @@
 package pages.main;
 
-import authorization.Authorization;
 import org.apache.log4j.Logger;
 import pages.MenuPages;
 import pages.accounts.AccountsPage;

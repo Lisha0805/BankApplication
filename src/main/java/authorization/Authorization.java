@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Authorization {
 
     Scanner scanner = new Scanner(System.in);
-    MainPage mainPage = new MainPage();
     Logger log = Logger.getLogger("APP1");
 
     public void applicationLogin() throws IOException {
@@ -25,18 +24,17 @@ public class Authorization {
             UserCredentials credentials = new UserCredentials();
             credentials.setCredentials(login, password);
 
-            //if (login.equals(order.getLogin()) && password.equals(order.getPassword())) mainPage.display();
             if (credentials.equals(order)) {
+                MainPage mainPage = new MainPage();
                 mainPage.display();
-                log.info("Successful login");
-            }
+                log.info("Successful login");}
             else {
                 log.warn("Wrong login or password!");
-                attempt++;
-            }
+                attempt++; }
+
             if (attempt == 3) {
                 log.fatal("Ran out of attempts");
                 System.exit(2);}
-        } while (true);
+        } while (attempt < 3);
     }
 }

@@ -1168,3 +1168,195 @@
 3. View accounts
 4.
 5. Back
+2022-07-18 22:41:35 INFO  APP1:21 - Please enter login and password:
+2022-07-18 22:41:40 WARN  APP1:32 - Wrong login or password!
+2022-07-18 22:41:40 INFO  APP1:21 - Please enter login and password:
+2022-07-18 22:41:46 WARN  APP1:32 - Wrong login or password!
+2022-07-18 22:41:46 INFO  APP1:21 - Please enter login and password:
+2022-07-18 22:41:51 WARN  APP1:32 - Wrong login or password!
+2022-07-18 22:41:51 FATAL APP1:36 - Ran out of attempts
+2022-07-18 23:11:51 INFO  APP1:21 - Please enter login and password:
+2022-07-18 23:11:55 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-18 23:11:59 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:12:01 INFO  APP1:32 - 3
+2022-07-18 23:12:01 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:12:54 INFO  APP1:21 - Please enter login and password:
+2022-07-18 23:13:01 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-18 23:13:02 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:13:04 INFO  APP1:32 - 3
+2022-07-18 23:13:04 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:14:32 INFO  APP1:21 - Please enter login and password:
+2022-07-18 23:16:27 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-18 23:16:28 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:16:29 INFO  APP1:32 - 3
+2022-07-18 23:16:29 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:46:08 INFO  APP1:21 - Please enter login and password:
+2022-07-18 23:46:14 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-18 23:46:15 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-18 23:46:16 INFO  APP1:32 - 3
+2022-07-18 23:46:16 INFO  APP1:27 - Account{number=265564, currency=BYN, status=ACTIVE, balance=0.0}
+2022-07-18 23:46:16 INFO  APP1:27 - Account{number=69393, currency=BYN, status=ACTIVE, balance=120.5}
+2022-07-18 23:46:16 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 20:39:25 INFO  APP1:21 - Please enter login and password:
+2022-07-19 20:41:15 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 20:41:16 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 20:41:17 INFO  APP1:32 - 1
+2022-07-19 20:41:17 INFO  APP1:67 - Enter account number
+2022-07-19 20:41:25 INFO  APP1:74 - Choose account currency: USD, BYN, EUR
+2022-07-19 20:41:25 WARN  APP1:81 - No such item!
+2022-07-19 20:41:25 INFO  APP1:62 - Account added
+2022-07-19 20:41:25 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 20:42:03 INFO  APP1:21 - Please enter login and password:
+2022-07-19 20:44:52 INFO  APP1:21 - Please enter login and password:
+2022-07-19 20:44:56 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 20:44:58 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 20:44:59 INFO  APP1:32 - 1
+2022-07-19 20:44:59 INFO  APP1:67 - Enter account number
+2022-07-19 20:45:01 INFO  APP1:74 - Choose account currency: USD, BYN, EUR
+2022-07-19 20:45:01 WARN  APP1:82 - No such item!
+2022-07-19 20:45:01 INFO  APP1:62 - Account added
+2022-07-19 20:45:01 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 21:01:29 INFO  APP1:21 - Please enter login and password:
+2022-07-19 21:01:33 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 21:01:34 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 21:01:38 INFO  APP1:32 - 5
+2022-07-19 21:01:38 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 21:01:40 INFO  APP1:51 - Accounts
+1.
+2. Apply for a loan
+3.
+4.
+5. Back
+2022-07-19 21:01:41 INFO  APP1:53 - 1
+2022-07-19 21:01:41 INFO  APP1:57 - Start of scoring
+2022-07-19 21:01:41 INFO  APP1:23 - Age verification
+2022-07-19 21:01:41 INFO  APP1:25 - Age: 25
+2022-07-19 21:01:41 INFO  APP1:27 - Verification passed
+2022-07-19 21:01:41 INFO  APP1:24 - Credit rating verification
+2022-07-19 21:01:41 INFO  APP1:25 - Credit Rating: -2
+2022-07-19 21:01:41 INFO  APP1:29 - Verification failed
+2022-07-19 21:01:41 INFO  APP1:13 - Loan denied
+2022-07-19 21:01:41 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 23:34:32 INFO  APP1:21 - Please enter login and password:
+2022-07-19 23:34:38 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-19 23:34:39 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 23:34:41 INFO  APP1:32 - 1
+2022-07-19 23:34:41 INFO  APP1:67 - Enter account number
+2022-07-19 23:34:43 INFO  APP1:74 - Choose account currency: USD, BYN, EUR
+2022-07-19 23:34:49 INFO  APP1:62 - Account added
+2022-07-19 23:34:49 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-19 23:34:52 INFO  APP1:32 - 3
+2022-07-19 23:34:52 INFO  APP1:26 - Account{number=265564, currency=BYN, status=ACTIVE, balance=0.0}
+2022-07-19 23:34:52 INFO  APP1:26 - Account{number=69393, currency=BYN, status=ACTIVE, balance=120.5}
+2022-07-19 23:34:52 INFO  APP1:26 - Account{number=4567, currency=EUR, status=ACTIVE, balance=0.0}
+2022-07-19 23:34:52 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back

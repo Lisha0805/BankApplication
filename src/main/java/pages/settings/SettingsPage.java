@@ -18,7 +18,6 @@ public class SettingsPage implements MenuPages {
     @Override
     public void display() throws IOException {
         PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
-
         int point = 0;
         String menu = """
                 Settings
@@ -34,8 +33,8 @@ public class SettingsPage implements MenuPages {
                 case 2 -> changePersonalDate();
                 case 3 -> mainPage.display();
                 default -> log.warn("No such item!");
-            }
-        }while (point > 3);
+                }
+        } while (point > 3);
     }
 
         public void changePersonalDate () throws IOException {
@@ -45,7 +44,6 @@ public class SettingsPage implements MenuPages {
                     "\n2. Patronymic: " + pd.getPatronymic() +
                     "\n3. Source of income: " + pd.getSourceOfIncome() +
                     "\n4. Back";
-
             log.info(menuToChange);
             int point = scannerPoint.nextInt();
             log.info(point);
@@ -54,7 +52,7 @@ public class SettingsPage implements MenuPages {
             switch (point) {
                 case 1 -> pd.setLastName(scannerData.nextLine());
                 case 2 -> pd.setPatronymic(scannerData.nextLine());
-                case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
+                //case 3 -> pd.setSourceOfIncome(scannerData.nextLine());
                 case 4 -> display();
                 default -> log.warn("No such item!");
             }

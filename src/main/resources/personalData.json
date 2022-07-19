@@ -2,7 +2,7 @@
   "lastName":"LastName",
   "patronymic":"Patro",
   "dateOfBirth":"1997-03-16",
-  "sex":"male",
-  "sourceOfIncome":"sourceOfIncome",
+  "sex":"MALE",
+  "sourceOfIncome":"EMPLOYEE",
   "incomePerYear":100,
   "creditRating":-2}
