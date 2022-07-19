@@ -1,17 +1,19 @@
 package pages.settings;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class PersonalData{
 
     private String firstName;
     private String lastName;
     private String patronymic;
-    private Date dateOfBirth;
-    private String sex;
-    private String sourceOfIncome;
+    private String dateOfBirth;
+    private PersonalDataSex sex;
+    private PersonalDataSourceOfIncome sourceOfIncome;
     private int incomePerYear;
     private int creditRating;
+    private int age;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -25,15 +27,15 @@ public class PersonalData{
         this.patronymic = patronymic;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public void setSex(String sex) {
+    public void setSex(PersonalDataSex sex) {
         this.sex = sex;
     }
 
-    public void setSourceOfIncome(String sourceOfIncome) {
+    public void setSourceOfIncome(PersonalDataSourceOfIncome sourceOfIncome) {
         this.sourceOfIncome = sourceOfIncome;
     }
 
@@ -57,15 +59,15 @@ public class PersonalData{
         return patronymic;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public String getSex() {
+    public PersonalDataSex getSex() {
         return sex;
     }
 
-    public String getSourceOfIncome() {
+    public PersonalDataSourceOfIncome getSourceOfIncome() {
         return sourceOfIncome;
     }
 
@@ -75,5 +77,20 @@ public class PersonalData{
 
     public int getCreditRating() {
         return creditRating;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void calculateAge(){
+        String[] parts = dateOfBirth.split("-");
+        int year = Integer.parseInt(parts[0]);
+        int month = Integer.parseInt(parts[1]);
+        int day = Integer.parseInt(parts[2]);
+
+        LocalDate birthDate = LocalDate.of(year, month, day);
+        LocalDate currentDate = LocalDate.now();
+        age = Period.between(birthDate, currentDate).getYears();
     }
 }

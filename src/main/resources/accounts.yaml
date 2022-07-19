@@ -1,0 +1,13 @@
+list:
+  - number: 265564
+    currency: "BYN"
+    status: "ACTIVE"
+    balance: 0
+  - number: 69393
+    currency: "BYN"
+    status: "ACTIVE"
+    balance: 120.50
+  - number: 83939303
+    currency: "BYN"
+    status: "INACTIVE"
+    balance: 160.99

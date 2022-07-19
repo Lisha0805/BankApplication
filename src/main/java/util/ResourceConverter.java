@@ -1,7 +1,5 @@
 package util;
 
-import com.fasterxml.jackson.core.exc.StreamReadException;
-import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 
@@ -26,5 +24,10 @@ public class ResourceConverter {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.writeValue(new File(defaultResourcePath + filename), object);
         System.out.println("Data updated!");
+    }
+
+    public static void objectToYaml(String filename, Object object) throws IOException {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        mapper.writeValue(new File(defaultResourcePath + filename), object);
     }
 }
