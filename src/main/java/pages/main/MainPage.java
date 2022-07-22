@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class MainPage implements MenuPages {
 
     @Override
-    public void display() throws IOException {
+    public void display() throws IOException, InterruptedException {
         Scanner scanner = new Scanner(System.in);
         AccountsPage accounts = new AccountsPage();
         SettingsPage setting = new SettingsPage();

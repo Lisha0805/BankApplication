@@ -17,7 +17,7 @@ public class AccountsPage implements MenuPages {
     public AccountsPage() throws IOException { }
 
     @Override
-    public void display() throws IOException {
+    public void display() throws IOException, InterruptedException {
         int point;
         String menu = """
                 Accounts
@@ -54,7 +54,7 @@ public class AccountsPage implements MenuPages {
         } while (point > 5);
     }
 
-    public void addAccount() throws IOException {
+    public void addAccount() throws IOException, InterruptedException {
         Account accToAdd = new Account();
         enterAccountNumber(accToAdd);
         enterAccountCurrency(accToAdd);
@@ -90,7 +90,7 @@ public class AccountsPage implements MenuPages {
         }*/
     }
 
-    public void printAccountsInfo() throws IOException {
+    public void printAccountsInfo() throws IOException, InterruptedException {
         accountList.printAccountList();
         display();
     }

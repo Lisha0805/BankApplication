@@ -16,7 +16,7 @@ public class SettingsPage implements MenuPages {
     Logger log = Logger.getLogger("APP1");
 
     @Override
-    public void display() throws IOException {
+    public void display() throws IOException, InterruptedException {
         PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
         int point = 0;
         String menu = """
@@ -37,7 +37,7 @@ public class SettingsPage implements MenuPages {
         } while (point > 3);
     }
 
-        public void changePersonalDate () throws IOException {
+        public void changePersonalDate () throws IOException, InterruptedException {
             PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
             String menuToChange = "Select item to change: " +
                     "\n1. Lastname: " + pd.getLastName() +
@@ -60,17 +60,8 @@ public class SettingsPage implements MenuPages {
             display();
         }
 
-        public void printPersonalData (PersonalData personalData) throws IOException {
-            String printPersonalData = "Personal Data: " +
-                    "\n" + " Firstname: " + personalData.getFirstName() +
-                    "\n" + " Lastname: " + personalData.getLastName() +
-                    "\n" + " Patronymic: " + personalData.getPatronymic() +
-                    "\n" + " Date of Birth: " + personalData.getDateOfBirth() +
-                    "\n" + " Sex: " + personalData.getSex() +
-                    "\n" + " Source of income: " + personalData.getSourceOfIncome() +
-                    "\n" + " Income per year: " + personalData.getIncomePerYear() +
-                    "\n" + " Credit rating: " + personalData.getCreditRating();
-            log.info(printPersonalData);
+        public void printPersonalData (PersonalData personalData) throws IOException, InterruptedException {
+            log.info(personalData.toString());
             display();
         }
     }

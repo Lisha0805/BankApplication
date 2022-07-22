@@ -8,22 +8,16 @@ import java.io.IOException;
 
 public class AgeVerification implements ScoringRule{
     Logger log = Logger.getLogger("APP1");
-    CreditRatingVerification crv = new CreditRatingVerification();
-    PersonalData pd;
-    {
-        try {
-            pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    CalculationOfTheAmount crv = new CalculationOfTheAmount();
+    PersonalData pd = (PersonalData) ResourceConverter.jsonToObject("personalData.json", PersonalData.class);
 
     public AgeVerification() throws IOException {
     }
 
     @Override
-    public void runScoringRule() throws IOException {
-        log.info("Age verification");
+    public void runScoringRule() throws IOException, InterruptedException {
+        log.info("AGE VERIFICATION");
+        Thread.sleep(4000);
         pd.calculateAge();
         log.info("Age: " + pd.getAge());
         if (pd.getAge() >= 18 && pd.getAge() < 60){
