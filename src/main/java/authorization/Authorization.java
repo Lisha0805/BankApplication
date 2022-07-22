@@ -12,7 +12,7 @@ public class Authorization {
     Scanner scanner = new Scanner(System.in);
     Logger log = Logger.getLogger("APP1");
 
-    public void applicationLogin() throws IOException {
+    public void applicationLogin() throws IOException, InterruptedException {
         UserCredentials order = (UserCredentials) ResourceConverter.yamlToObject("authorization.yaml", UserCredentials.class);
 
         String login, password;

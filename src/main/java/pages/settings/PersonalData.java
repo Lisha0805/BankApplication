@@ -83,6 +83,19 @@ public class PersonalData{
         return age;
     }
 
+    @Override
+    public String toString() {
+        return "PersonalData:" +
+                "\n\tFirst Name: " + firstName +
+                "\n\tLast Name: " + lastName +
+                "\n\tPatronymic: " + patronymic +
+                "\n\tDate Of Birth: " + dateOfBirth +
+                "\n\tSex: " + sex +
+                "\n\tSource Of Income: " + sourceOfIncome +
+                "\n\tIncome Per Year: " + incomePerYear +
+                "\n\tCredit Rating: " + creditRating;
+    }
+
     public void calculateAge(){
         String[] parts = dateOfBirth.split("-");
         int year = Integer.parseInt(parts[0]);

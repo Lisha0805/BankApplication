@@ -1360,3 +1360,568 @@
 3. View accounts
 4.
 5. Back
+2022-07-20 00:25:00 INFO  APP1:21 - Please enter login and password:
+2022-07-20 00:25:08 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-20 00:25:10 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-20 00:25:12 INFO  APP1:30 - 1
+2022-07-20 00:25:12 INFO  APP1:73 - Personal Data: 
+ Firstname: Name
+ Lastname: LastName
+ Patronymic: Patro
+ Date of Birth: 1997-03-16
+ Sex: MALE
+ Source of income: EMPLOYEE
+ Income per year: 100
+ Credit rating: -2
+2022-07-20 00:25:12 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-20 00:25:16 INFO  APP1:30 - 3
+2022-07-20 00:25:16 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-20 00:25:18 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-20 00:25:19 INFO  APP1:32 - 3
+2022-07-20 00:25:19 INFO  APP1:26 - Account{number=265564, currency=BYN, status=ACTIVE, balance=0.0}
+2022-07-20 00:25:19 INFO  APP1:26 - Account{number=69393, currency=BYN, status=ACTIVE, balance=120.5}
+2022-07-20 00:25:19 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-20 00:25:23 INFO  APP1:32 - 5
+2022-07-20 00:25:23 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 15:02:52 INFO  APP1:21 - Please enter login and password:
+2022-07-22 15:03:00 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 15:03:02 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:03:05 INFO  APP1:30 - 1
+2022-07-22 15:03:06 INFO  APP1:74 - PersonalData{firstName='Name', lastName='LastName', patronymic='Patro', dateOfBirth='1997-03-16', sex=MALE, sourceOfIncome=EMPLOYEE, incomePerYear=100, creditRating=-2}
+2022-07-22 15:03:06 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:05:46 INFO  APP1:21 - Please enter login and password:
+2022-07-22 15:05:50 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 15:05:52 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:05:54 INFO  APP1:30 - 1
+2022-07-22 15:05:54 INFO  APP1:74 - PersonalData{
+First Name = Name, 
+Last Name = LastName, 
+Patronymic = Patro, 
+Date Of Birth = 1997-03-16, 
+Sex = MALE, 
+Source Of Income= EMPLOYEE, 
+Income Per Year= 100, 
+Credit Rating= -2}
+2022-07-22 15:05:54 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:07:03 INFO  APP1:21 - Please enter login and password:
+2022-07-22 15:07:07 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 15:07:09 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:07:10 INFO  APP1:30 - 1
+2022-07-22 15:07:10 INFO  APP1:74 - PersonalData:
+	First Name = Name, 
+	Last Name = LastName, 
+	Patronymic = Patro, 
+	Date Of Birth = 1997-03-16, 
+	Sex = MALE, 
+	Source Of Income = EMPLOYEE, 
+	Income Per Year = 100, 
+	Credit Rating = -2
+2022-07-22 15:07:10 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:08:06 INFO  APP1:21 - Please enter login and password:
+2022-07-22 15:08:10 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 15:08:11 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 15:08:12 INFO  APP1:30 - 1
+2022-07-22 15:08:12 INFO  APP1:74 - PersonalData:
+	First Name: Name, 
+	Last Name: LastName, 
+	Patronymic: Patro, 
+	Date Of Birth: 1997-03-16, 
+	Sex: MALE, 
+	Source Of Income: EMPLOYEE, 
+	Income Per Year: 100, 
+	Credit Rating: -2
+2022-07-22 15:08:12 INFO  APP1:28 - Settings
+1. View Data
+2. Change Data
+3. Back
+2022-07-22 20:00:29 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:00:50 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:00:54 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:00:55 INFO  APP1:30 - Accounts
+1. Add new account
+2. Delete account
+3. View accounts
+4.
+5. Back
+2022-07-22 20:01:00 INFO  APP1:32 - 5
+2022-07-22 20:01:00 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:01:02 INFO  APP1:33 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:01:07 INFO  APP1:35 - 2
+2022-07-22 20:01:07 INFO  APP1:45 - Credit:
+	Loan Number: 0
+	Loan Amount: 0
+	Loan Term: 0
+	Credit Status: ACTIVE
+	Loan InterestRate: 0.0
+	Credit Purpose: null
+2022-07-22 20:01:07 INFO  APP1:30 - Successful login
+2022-07-22 20:01:07 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:01:58 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:02:02 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:02:07 INFO  APP1:33 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:02:09 INFO  APP1:35 - 2
+2022-07-22 20:02:09 INFO  APP1:45 - Credit:
+	Loan Number: 0
+	Loan Amount: 0
+	Loan Term: 0
+	Credit Status: ACTIVE
+	Loan InterestRate: 0.0
+	Credit Purpose: null
+2022-07-22 20:02:09 INFO  APP1:33 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:02:12 INFO  APP1:35 - 1
+2022-07-22 20:02:12 INFO  APP1:39 - Start of scoring
+2022-07-22 20:35:38 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:37:09 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:37:11 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:37:13 INFO  APP1:28 - 2
+2022-07-22 20:37:13 INFO  APP1:38 - Credit:
+	Loan Number: 0
+	Loan Amount: 0
+	Loan Term: 0
+	Credit Status: ACTIVE
+	Loan InterestRate: 0.0
+	Credit Purpose: null
+2022-07-22 20:37:13 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:37:47 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:39:15 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:39:29 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:39:36 INFO  APP1:28 - 1
+2022-07-22 20:39:36 INFO  APP1:32 - Start of scoring
+2022-07-22 20:40:35 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:40:39 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:40:41 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:40:42 INFO  APP1:28 - 1
+2022-07-22 20:40:42 INFO  APP1:32 - Start of scoring
+2022-07-22 20:44:43 INFO  APP1:21 - Please enter login and password:
+2022-07-22 20:46:51 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 20:46:52 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 20:46:53 INFO  APP1:28 - 1
+2022-07-22 20:46:53 INFO  APP1:32 - Start of scoring
+2022-07-22 20:46:53 INFO  APP1:19 - Age verification
+2022-07-22 20:46:53 INFO  APP1:21 - Age: 25
+2022-07-22 20:46:53 INFO  APP1:23 - Verification passed
+2022-07-22 20:46:53 INFO  APP1:29 - Source of income Verification
+2022-07-22 20:46:53 INFO  APP1:35 - Verification passed
+2022-07-22 20:46:53 INFO  APP1:43 - Credit rating check
+2022-07-22 20:46:53 INFO  APP1:57 - Calculation ot the loan amount
+2022-07-22 20:46:53 INFO  APP1:59 - Maximum available loan amount: 0
+2022-07-22 20:46:53 INFO  APP1:29 - Source of income Verification
+2022-07-22 20:46:53 INFO  APP1:35 - Verification passed
+2022-07-22 20:46:53 INFO  APP1:43 - Credit rating check
+2022-07-22 20:46:53 INFO  APP1:57 - Calculation ot the loan amount
+2022-07-22 20:46:53 INFO  APP1:59 - Maximum available loan amount: 0
+2022-07-22 20:46:53 INFO  APP1:54 - Choose the loan amount:
+2022-07-22 21:06:09 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:06:15 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:06:17 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:06:19 INFO  APP1:28 - 1
+2022-07-22 21:06:19 INFO  APP1:32 - Start of scoring
+2022-07-22 21:06:19 INFO  APP1:19 - Age verification
+2022-07-22 21:06:19 INFO  APP1:21 - Age: 25
+2022-07-22 21:06:19 INFO  APP1:23 - Verification passed
+2022-07-22 21:06:19 INFO  APP1:29 - Source of income Verification
+2022-07-22 21:06:19 INFO  APP1:35 - Verification passed
+2022-07-22 21:06:19 INFO  APP1:43 - Credit rating check
+2022-07-22 21:06:19 INFO  APP1:54 - Verification failed
+2022-07-22 21:06:19 INFO  APP1:81 - Loan denied!
+2022-07-22 21:06:19 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:16:43 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:16:57 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:16:59 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:17:00 INFO  APP1:28 - 1
+2022-07-22 21:17:00 INFO  APP1:32 - Start of scoring
+2022-07-22 21:17:00 INFO  APP1:19 - Age verification
+2022-07-22 21:17:02 INFO  APP1:22 - Age: 25
+2022-07-22 21:17:02 INFO  APP1:24 - Verification passed
+2022-07-22 21:17:02 INFO  APP1:28 - Source of income Verification
+2022-07-22 21:17:04 INFO  APP1:36 - Verification passed
+2022-07-22 21:17:04 INFO  APP1:44 - Credit rating check
+2022-07-22 21:17:06 INFO  APP1:56 - Verification failed
+2022-07-22 21:17:06 INFO  APP1:81 - Loan denied!
+2022-07-22 21:17:06 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:19:58 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:20:06 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:20:07 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:20:09 INFO  APP1:28 - 1
+2022-07-22 21:20:09 INFO  APP1:32 - Start of scoring
+2022-07-22 21:20:09 INFO  APP1:19 - Age verification
+2022-07-22 21:20:13 INFO  APP1:22 - Age: 25
+2022-07-22 21:20:13 INFO  APP1:24 - Verification passed
+2022-07-22 21:20:13 INFO  APP1:28 - Source of income Verification
+2022-07-22 21:20:17 INFO  APP1:36 - Verification passed
+2022-07-22 21:20:18 INFO  APP1:45 - Credit rating check
+2022-07-22 21:20:22 INFO  APP1:49 - Verification passed
+2022-07-22 21:20:23 INFO  APP1:61 - Calculation ot the loan amount
+2022-07-22 21:20:27 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:20:28 INFO  APP1:28 - Source of income Verification
+2022-07-22 21:20:32 INFO  APP1:36 - Verification passed
+2022-07-22 21:20:33 INFO  APP1:45 - Credit rating check
+2022-07-22 21:20:37 INFO  APP1:49 - Verification passed
+2022-07-22 21:20:38 INFO  APP1:61 - Calculation ot the loan amount
+2022-07-22 21:20:42 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:20:42 INFO  APP1:55 - Choose the loan amount:
+2022-07-22 21:24:20 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:24:37 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:24:41 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:24:43 INFO  APP1:28 - 1
+2022-07-22 21:24:43 INFO  APP1:32 - Start of scoring
+2022-07-22 21:24:44 INFO  APP1:19 - Age verification
+2022-07-22 21:24:48 INFO  APP1:22 - Age: 25
+2022-07-22 21:24:48 INFO  APP1:24 - Verification passed
+2022-07-22 21:24:48 INFO  APP1:28 - Source of income Verification
+2022-07-22 21:24:52 INFO  APP1:36 - Verification passed
+2022-07-22 21:27:07 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:27:50 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:27:51 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:27:53 INFO  APP1:28 - 1
+2022-07-22 21:27:53 INFO  APP1:32 - Start of scoring
+2022-07-22 21:27:53 INFO  APP1:19 - AGE VERIFICATION
+2022-07-22 21:27:57 INFO  APP1:22 - Age: 25
+2022-07-22 21:27:57 INFO  APP1:24 - Verification passed
+2022-07-22 21:27:57 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:28:01 INFO  APP1:36 - Verification passed
+2022-07-22 21:28:02 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:28:06 INFO  APP1:49 - Verification passed
+2022-07-22 21:28:07 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:28:11 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:28:12 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:28:16 INFO  APP1:36 - Verification passed
+2022-07-22 21:28:17 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:28:21 INFO  APP1:49 - Verification passed
+2022-07-22 21:28:22 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:28:26 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:28:26 INFO  APP1:55 - Choose the loan amount:
+2022-07-22 21:28:38 INFO  APP1:64 - Choose the loan term:
+2022-07-22 21:28:45 INFO  APP1:71 - Choose the purpose of the loan: MORTGAGE, BUSINESS, CAR_LOAN, CONSUMER
+2022-07-22 21:28:55 INFO  APP1:34 - CALCULATION INTEREST RATE
+2022-07-22 21:28:59 INFO  APP1:36 - The interest rate on the loan will be: 23.122363377404326
+2022-07-22 21:29:00 INFO  APP1:20 - CALCULATION ANNUAL PAYMENT
+2022-07-22 21:29:04 INFO  APP1:42 - The payment on the loan will be: 182.25
+2022-07-22 21:29:04 INFO  APP1:44 - Do you agree with the terms of the loan? YES/NO
+2022-07-22 21:29:20 INFO  APP1:92 - Loan submitted!
+2022-07-22 21:29:20 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:29:24 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:29:25 INFO  APP1:28 - 2
+2022-07-22 21:29:25 INFO  APP1:38 - Credit:
+	Loan Number: 0
+	Loan Amount: 0
+	Loan Term: 0
+	Credit Status: REPAID
+	Loan InterestRate: 0.0
+	Credit Purpose: null
+2022-07-22 21:29:25 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:29:34 INFO  APP1:28 - 5
+2022-07-22 21:29:34 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:33:30 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:33:52 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:33:53 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:33:54 INFO  APP1:28 - 1
+2022-07-22 21:33:54 INFO  APP1:32 - Start of scoring
+2022-07-22 21:33:54 INFO  APP1:19 - AGE VERIFICATION
+2022-07-22 21:33:58 INFO  APP1:22 - Age: 25
+2022-07-22 21:33:58 INFO  APP1:24 - Verification passed
+2022-07-22 21:33:58 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:34:02 INFO  APP1:36 - Verification passed
+2022-07-22 21:34:03 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:34:07 INFO  APP1:49 - Verification passed
+2022-07-22 21:34:08 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:34:12 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:34:13 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:34:17 INFO  APP1:36 - Verification passed
+2022-07-22 21:34:18 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:34:22 INFO  APP1:49 - Verification passed
+2022-07-22 21:34:23 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:34:27 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:34:27 INFO  APP1:55 - Choose the loan amount:
+2022-07-22 21:34:39 INFO  APP1:64 - Choose the loan term:
+2022-07-22 21:34:46 INFO  APP1:71 - Choose the purpose of the loan: MORTGAGE, BUSINESS, CAR_LOAN, CONSUMER
+2022-07-22 21:34:54 INFO  APP1:34 - CALCULATION INTEREST RATE
+2022-07-22 21:34:59 INFO  APP1:36 - The interest rate on the loan will be: 534.6436881567288
+2022-07-22 21:35:00 INFO  APP1:20 - CALCULATION ANNUAL PAYMENT
+2022-07-22 21:35:04 INFO  APP1:42 - The payment on the loan will be: 182.25
+2022-07-22 21:35:04 INFO  APP1:44 - Do you agree with the terms of the loan? YES/NO
+2022-07-22 21:35:28 INFO  APP1:92 - Loan submitted!
+2022-07-22 21:35:28 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:35:37 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:35:40 INFO  APP1:28 - 2
+2022-07-22 21:35:40 INFO  APP1:38 - Credit:
+	Loan Number: 0
+	Loan Amount: 0
+	Loan Term: 0
+	Credit Status: REPAID
+	Loan InterestRate: 0.0
+	Credit Purpose: null
+2022-07-22 21:35:40 INFO  APP1:26 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:39:16 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:40:12 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:40:26 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:40:29 INFO  APP1:27 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:40:30 INFO  APP1:29 - 1
+2022-07-22 21:40:30 INFO  APP1:33 - Start of scoring
+2022-07-22 21:40:30 INFO  APP1:19 - AGE VERIFICATION
+2022-07-22 21:40:34 INFO  APP1:22 - Age: 25
+2022-07-22 21:40:34 INFO  APP1:24 - Verification passed
+2022-07-22 21:40:34 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:40:38 INFO  APP1:36 - Verification passed
+2022-07-22 21:40:39 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:40:43 INFO  APP1:49 - Verification passed
+2022-07-22 21:40:44 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:40:49 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:40:50 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:40:54 INFO  APP1:36 - Verification passed
+2022-07-22 21:40:55 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:40:59 INFO  APP1:49 - Verification passed
+2022-07-22 21:41:00 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:41:04 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:41:04 INFO  APP1:55 - Choose the loan amount:
+2022-07-22 21:41:09 INFO  APP1:64 - Choose the loan term:
+2022-07-22 21:41:13 INFO  APP1:71 - Choose the purpose of the loan: MORTGAGE, BUSINESS, CAR_LOAN, CONSUMER
+2022-07-22 21:41:22 INFO  APP1:34 - CALCULATION INTEREST RATE
+2022-07-22 21:41:26 INFO  APP1:36 - The interest rate on the loan will be: 10.0
+2022-07-22 21:41:27 INFO  APP1:20 - CALCULATION ANNUAL PAYMENT
+2022-07-22 21:41:31 INFO  APP1:42 - The payment on the loan will be: NaN
+2022-07-22 21:41:31 INFO  APP1:44 - Do you agree with the terms of the loan? YES/NO
+2022-07-22 21:48:57 INFO  APP1:21 - Please enter login and password:
+2022-07-22 21:49:09 INFO  APP1:30 - Maim menu:
+1. Accounts
+2. Settings
+3. Credits
+2022-07-22 21:49:10 INFO  APP1:27 - Accounts
+1. Apply for a loan
+2. View information on the latest loan
+3.
+4.
+5. Back
+2022-07-22 21:49:11 INFO  APP1:29 - 1
+2022-07-22 21:49:11 INFO  APP1:33 - Start of scoring
+2022-07-22 21:49:11 INFO  APP1:19 - AGE VERIFICATION
+2022-07-22 21:49:15 INFO  APP1:22 - Age: 25
+2022-07-22 21:49:15 INFO  APP1:24 - Verification passed
+2022-07-22 21:49:15 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:49:19 INFO  APP1:36 - Verification passed
+2022-07-22 21:49:20 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:49:24 INFO  APP1:49 - Verification passed
+2022-07-22 21:49:25 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:49:29 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:49:30 INFO  APP1:28 - SOURCE OF INCOME VERIFICATION
+2022-07-22 21:49:34 INFO  APP1:36 - Verification passed
+2022-07-22 21:49:35 INFO  APP1:45 - CREDIT RATING CHECK
+2022-07-22 21:49:39 INFO  APP1:49 - Verification passed
+2022-07-22 21:49:40 INFO  APP1:61 - CALCULATION OF THE LOAN AMOUNT
+2022-07-22 21:49:44 INFO  APP1:64 - Maximum available loan amount: 1000000
+2022-07-22 21:49:44 INFO  APP1:55 - Choose the loan amount:
+2022-07-22 21:49:51 INFO  APP1:64 - Choose the loan term:
+2022-07-22 21:49:54 INFO  APP1:71 - Choose the purpose of the loan: MORTGAGE, BUSINESS, CAR_LOAN, CONSUMER
+2022-07-22 21:50:01 INFO  APP1:34 - CALCULATION INTEREST RATE
+2022-07-22 21:50:05 INFO  APP1:36 - The interest rate on the loan will be: 10.0
+2022-07-22 21:50:06 INFO  APP1:20 - CALCULATION ANNUAL PAYMENT
